@@ -8,8 +8,10 @@ const assertEqual = (actual, expected)=>{
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual('Amro', 'Amro');
-assertEqual('Amro', 'AMRO');
-assertEqual(1, 3);
+const head = (list) =>{
+  return list[0];
+}
+
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head([]), "Hello");
