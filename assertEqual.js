@@ -8,8 +8,5 @@ const assertEqual = (actual, expected)=>{
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual('Amro', 'Amro');
-assertEqual('Amro', 'AMRO');
-assertEqual(1, 3);
+module.exports = assertEqual;
+
